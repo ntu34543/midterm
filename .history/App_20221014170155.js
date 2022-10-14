@@ -19,6 +19,8 @@ function MyTabs() {
   );
 }
 
+
+
 export default function App() {
   return (
     <NavigationContainer>
