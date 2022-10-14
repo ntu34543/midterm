@@ -3,8 +3,10 @@ import React, {useState} from 'react';
 import {Text, View, TouchableOpacity} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import ThirdScreen from './components/alignItems';
-import FirstScreen from './components/direction';
+
+function FirstScreen() {
+
+}
 
 function SecondScreen() {
   const [position, setPosition] = useState('relative');
@@ -67,14 +69,18 @@ function SecondScreen() {
   );
 }
 
+function ThirdScreen() {
+
+}
+
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
   return (
     <Tab.Navigator>
+      <Tab.Screen name="alignItems" component={ThirdScreen} />
       <Tab.Screen name="direction" component={FirstScreen} />
       <Tab.Screen name="position" component={SecondScreen} />
-      <Tab.Screen name="alignItems" component={ThirdScreen} />
     </Tab.Navigator>
   );
 }
