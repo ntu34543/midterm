@@ -12,7 +12,7 @@ function MyTabs() {
   return (
     <Tab.Navigator>
       <Tab.Screen name="direction" component={FirstScreen} options={{ tabBarBadge: 1 }} />
-      <Tab.Screen name="position" component={SecondScreen} options={{ tabBarBadge: 2 }} />
+      <Tab.Screen name="position" component={SecondScreen} options={{ tabBarBadge: 3 }} />
       <Tab.Screen name="alignItems" component={ThirdScreen} options={{ tabBarBadge: 3 }} />
     </Tab.Navigator>
   );
